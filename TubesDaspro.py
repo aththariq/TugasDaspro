@@ -36,7 +36,7 @@ def panjangFile(namaFile):
 #     return i 
 
 def length(nString, i=0, nMark='.'): #REKURSIF
-    if nString[i] == nMark:
+    if i >= len(nString) or nString[i] == nMark:
         return i
     else:
         return length(nString, i + 1, nMark)
